@@ -15,6 +15,8 @@
 		55BB58321C0D4D0100E90AC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BB58301C0D4D0100E90AC8 /* LaunchScreen.storyboard */; };
 		55BB583D1C0D4D0100E90AC8 /* SXJOrientationLockDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BB583C1C0D4D0100E90AC8 /* SXJOrientationLockDetectorTests.m */; };
 		55BB58481C0D4D0100E90AC8 /* SXJOrientationLockDetectorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BB58471C0D4D0100E90AC8 /* SXJOrientationLockDetectorUITests.m */; };
+		55BB58561C0D4D5600E90AC8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BB58551C0D4D5600E90AC8 /* CoreMotion.framework */; };
+		55BB58581C0D4D7600E90AC8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BB58571C0D4D7600E90AC8 /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		55BB58431C0D4D0100E90AC8 /* SXJOrientationLockDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SXJOrientationLockDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55BB58471C0D4D0100E90AC8 /* SXJOrientationLockDetectorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXJOrientationLockDetectorUITests.m; sourceTree = "<group>"; };
 		55BB58491C0D4D0100E90AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55BB58551C0D4D5600E90AC8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		55BB58571C0D4D7600E90AC8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55BB58581C0D4D7600E90AC8 /* ImageIO.framework in Frameworks */,
+				55BB58561C0D4D5600E90AC8 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,8 @@
 		55BB58161C0D4D0100E90AC8 = {
 			isa = PBXGroup;
 			children = (
+				55BB58571C0D4D7600E90AC8 /* ImageIO.framework */,
+				55BB58551C0D4D5600E90AC8 /* CoreMotion.framework */,
 				55BB58211C0D4D0100E90AC8 /* SXJOrientationLockDetector */,
 				55BB583B1C0D4D0100E90AC8 /* SXJOrientationLockDetectorTests */,
 				55BB58461C0D4D0100E90AC8 /* SXJOrientationLockDetectorUITests */,

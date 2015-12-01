@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,51 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sh1-Td-Sof">
+                                <rect key="frame" x="276" y="354" width="209" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjp-3c-mTK">
+                                        <rect key="frame" x="0.0" y="0.0" width="209" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Check Orientation Lock Status"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <variation key="heightClass=regular-widthClass=regular" axis="vertical"/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sh1-Td-Sof" secondAttribute="trailing" constant="95" id="2Lh-g0-9zA"/>
+                            <constraint firstItem="Sh1-Td-Sof" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6nn-ol-amy"/>
+                            <constraint firstItem="Sh1-Td-Sof" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="354" id="R7m-T9-e2v"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sh1-Td-Sof" secondAttribute="bottom" constant="216" id="mK7-4K-TOP"/>
+                            <constraint firstItem="Sh1-Td-Sof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rfc-0R-lzz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6nn-ol-amy"/>
+                                <exclude reference="R7m-T9-e2v"/>
+                                <exclude reference="rfc-0R-lzz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="6nn-ol-amy"/>
+                                <include reference="R7m-T9-e2v"/>
+                                <include reference="rfc-0R-lzz"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="lockStatusButton" destination="Vjp-3c-mTK" id="tuc-Zf-2hu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="244.5" y="165"/>
         </scene>
     </scenes>
 </document>
